@@ -1,0 +1,111 @@
+
+nav .brand-logo {
+  left: 10% !important;
+  width: 12% !important;
+  height: 40px !important;
+ 
+}
+
+.nav{
+    position: relative;
+    top: 30px;
+}
+
+.nav-wrapper {
+  background: linear-gradient(to right, #fec401, #fe8900);
+  height: 160% !important;
+}
+
+.links {
+  margin-right: 10% !important;
+}
+
+.icon {
+  margin: 0px 10px !important;
+}
+
+.nav-bar-btn {
+  height: 33px;
+  width: 110px;
+  background: #fff; 
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  margin: 0 15px;
+
+}
+
+.dropdown-btn{
+    background-color: #fe8900 !important;
+    box-shadow: none !important;
+}
+
+.card {
+    margin: 4rem 0 1rem 0 !important;
+}
+
+.profile-cont {
+  
+  position: relative !important;
+  top: 100px !important;
+}
+
+i.tiny {
+    font-size: 18px !important;
+}
+
+.edit-btn {
+  border: 3px solid #4aff47 !important;
+  background-color: white !important;
+  color: #4aff47 !important;
+}
+
+.level-btn {
+  position: relative !important;
+  left: 450px !important;
+  background-color: #4aff47 !important;
+  width: 180px !important;
+}
+
+.profile {
+  max-width: 90% !important;
+}
+
+.cont2 {
+  width: 90% !important;
+}
+
+@media screen and (max-width: 600px) {
+  nav .brand-logo {
+    left: 75% !important;
+  }
+
+  .level-btn {
+    width: 100px !important;
+    left: 25px !important;
+  }
+
+  .logo {
+    left: 65%;
+    width: 15% !important;
+    height: 35px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  nav .brand-logo {
+    left: 75% !important;
+  }
+
+  .level-btn {
+    width: 100px !important;
+    left: 12% !important;
+  }
+
+  .logo {
+    left: 65%;
+    width: 15% !important;
+    height: 35px !important;
+  }
+}
