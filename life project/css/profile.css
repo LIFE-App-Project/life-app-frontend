@@ -1,9 +1,14 @@
 
 nav .brand-logo {
   left: 10% !important;
-  width: 12% !important;
+  width: 120px !important;
   height: 40px !important;
  
+}
+
+.logo{
+  width: 100%;
+  height: 100%;
 }
 
 .nav{
@@ -12,7 +17,7 @@ nav .brand-logo {
 }
 
 .nav-wrapper {
-  background: linear-gradient(to right, #fec401, #fe8900);
+  background: linear-gradient(to right, #ffd900, #ff6a00);
   height: 160% !important;
 }
 
@@ -51,8 +56,21 @@ nav .brand-logo {
   top: 100px !important;
 }
 
+.profile-img{
+  width: 230px;
+  height: 230px;
+}
+
+.desc{
+  margin-left: 200px;
+}
+
 i.tiny {
     font-size: 18px !important;
+}
+
+.btn-container{
+  margin-right: 0 !important;
 }
 
 .edit-btn {
@@ -86,11 +104,6 @@ i.tiny {
     left: 25px !important;
   }
 
-  .logo {
-    left: 65%;
-    width: 15% !important;
-    height: 35px !important;
-  }
 }
 
 @media screen and (max-width: 990px) {
@@ -98,14 +111,18 @@ i.tiny {
     left: 75% !important;
   }
 
+  .child-profile-container{
+    width: 95% !important;
+  }
+
+  .profile-img{
+    width: 200px;
+    height: 200px;
+  }
+
   .level-btn {
     width: 100px !important;
     left: 12% !important;
   }
 
-  .logo {
-    left: 65%;
-    width: 15% !important;
-    height: 35px !important;
-  }
 }
