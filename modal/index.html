@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Modal Login Form</h2>
+    <button id="_displayBtn" class="btns" style="width:auto;">Login</button>
+    <button id="_displayBtn2" class="btns" style="width:auto;">sign in</button>
+
+
+    <div class="bg-modal">
+        <div class="modal-content animate" id="slide1">
+            <div class="image_container">
+                <img src="Paradigm-Initiative-Logo.png" alt="logo">
+            </div>
+            <div class="form-container">
+                <form>
+                    <div class="_formgrid">
+                        <input type="text" placeholder="FIRST NAME" name="fname" required>
+
+                        <input type="text" placeholder="LAST NAME" name="lname" required>
+                    </div>
+                    <input type="email" placeholder="EMAIL ADDRESS" name="email" required>
+
+                    <input type="password" placeholder="PASSWORD" name="psw" required>
+
+                    <input type="password" placeholder="CONFIRM PASSWORD" name="cnfpsw" required>
+
+                    <div class="radio_spot">
+                    <label class="radio_container">Male
+                        <input type="radio" name="gender">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="radio_container">Female
+                        <input type="radio" name="gender">
+                        <span class="checkmark"></span>
+                    </label>
+                    </div>
+
+                    <label class="check_container">I accept the <a href="#" target="_blank">Terms of Use</a> & <a href="#" target="_blank">Privacy Policy</a>
+                    <input type="checkbox" required>
+                    <span class="check_checkmark"></span>
+                    </label>
+
+                    <div class='_bottomgrid'>
+                    <div><span class="recaptcha">/recaptcha goes here/</span></div>
+                    <div class="btn_container"><button class="sub_button" type="submit">Sign up</button></div></div>
+                    
+                    <center style="margin: 10px;">Already have an account? <a href="javascript:void(0)" id="loginHere">Login here</a></center>
+
+                 </form>
+           </div>  
+        </div>
+
+        <!-- sign in -->
+        <div class="modal-content animate" id="slide2">
+            <div class="image_container">
+                <img src="Paradigm-Initiative-Logo.png" alt="logo">
+            </div>
+            <div class="form-container">
+                <form>
+                    <input type="text" placeholder="USERNAME OR EMAIL ADDRESS" name="unameEmail" required>
+                   
+                    <input type="password" placeholder="PASSWORD" name="psw" required>
+
+                    <label class="check_container">Remember me
+                    <input type="checkbox" required>
+                    <span class="check_checkmark"></span>
+                    </label>
+
+                    <div class='_bottom'>
+                        <div class="btn_container"><button class="sub_button" type="submit">Sign in</button></div>
+                    </div>
+                    
+                    <div class='_bottomgrid'>
+                        <div><span class="recaptcha"><a href="javascript:void(0)" id="register">Register</a></span></div>
+                        <div class="btn_container"><a href="">Forgot your password?</a></div></div>
+                   </form>
+            </div>  
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+
+</body>
+</html>

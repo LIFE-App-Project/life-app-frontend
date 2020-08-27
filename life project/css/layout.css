@@ -1,0 +1,146 @@
+:root{
+  font-size: 16px;
+  font-family: "Futura MdCn BT", Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {box-sizing: inherit;}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+.row {display: block;}
+
+.row:before, .row:after{
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/*[class*="col"],*/ .column{
+  float: left;
+}
+
+.column {padding-left: 15px; padding-right: 15px;}
+
+.row + .row {padding-top: 15px; padding-bottom: 15px;}
+
+.table {display: table;}
+
+.table-row {display: table-row;}
+
+.table-cell {display: table-cell; vertical-align: middle;}
+
+.m-display-none {display: none;}
+
+.m-display-block {display: block;}
+
+.m-display-inline-block {display: inline-block;}
+
+.m-display-inline {display: inline;}
+
+.m-1 { width: 8.3333%; }
+.m-2 { width: 16.6667%; }
+.m-3 { width: 25%; }
+.m-4 { width: 33.3333%; }
+.m-5 { width: 41.6667%; }
+.m-6 { width: 50%; }
+.m-7 { width: 58.3333%; }
+.m-8 { width: 66.6667%; }
+.m-9 { width: 75%; }
+.m-10 { width: 83.3333%; }
+.m-11 { width: 91.6667% }
+.m-12 { width: 100%; }
+
+.layout-table {
+  float: none;
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+.layout-table-row, .layout-table-cell {display: block;}
+
+/*medium*/
+@media only screen and (min-width: 285px) and (max-width: 499px){
+.md-1 { width: 8.3333%; }
+.md-2 { width: 16.6667%; }
+.md-3 { width: 25%; }
+.md-4 { width: 33.3333%; }
+.md-5 { width: 41.6667%; }
+.md-6 { width: 50%; }
+.md-7 { width: 58.3333%; }
+.md-8 { width: 66.6667%; }
+.md-9 { width: 75%; }
+.md-10 { width: 83.3333%; }
+.md-11 { width: 91.6667% }
+.md-12 { width: 100%; }
+}
+
+
+/*tablet design*/
+@media screen and (min-width: 500px){
+	
+.layout-table {display: table;}
+
+.layout-table-row {display: table-row;}
+
+.layout-table-cell {
+  display: table-cell;
+  padding: 15px;
+}
+	
+.t-display-none {display: none;}
+
+.t-display-block {display: block;}
+
+.t-display-inline-block {display: inline-block;}
+
+.t-display-inline {display: inline;}
+
+.t-1 { width: 8.3333%; }
+.t-2 { width: 16.6667%; }
+.t-3 { width: 25%; }
+.t-4 { width: 33.3333%; }
+.t-5 { width: 41.6667%; }
+.t-6 { width: 50%; }
+.t-7 { width: 58.3333%; }
+.t-8 { width: 66.6667%; }
+.t-9 { width: 75%; }
+.t-10 { width: 83.3333%; }
+.t-11 { width: 91.6667% }
+.t-12 { width: 100%; }
+
+}
+
+
+
+
+
+/*desktop design*/
+@media screen and (min-width: 800px){
+.d-display-none {display: none;}
+
+.d-display-block {display: block;}
+
+.d-display-inline-block {display: inline-block;}
+
+.d-display-inline {display: inline;}	
+	
+.d-1 { width: 8.3333%; }
+.d-2 { width: 16.6667%; }
+.d-3 { width: 25%; }
+.d-4 { width: 33.3333%; }
+.d-5 { width: 41.6667%; }
+.d-6 { width: 50%; }
+.d-7 { width: 58.3333%; }
+.d-8 { width: 66.6667%; }
+.d-9 { width: 75%; }
+.d-10 { width: 83.3333%; }
+.d-11 { width: 91.6667% }
+.d-12 { width: 100%; }
+
+}

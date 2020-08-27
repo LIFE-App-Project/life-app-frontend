@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>HOMEPAGE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+ <!-- Favicons -->
+<link href="images/fav-icon.PNG" rel="icon">
+<link href="images/fav-icon.PNG" rel="apple-touch-icon">
+
+<!-- Bootstrap CSS File -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- offline bootstrap to be removed -->
+<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+
+<!-- Libraries CSS Files -->
+<link rel="stylesheet" href="lib/fonts/icomoon/style.css">
+<link rel="stylesheet" href="sliders/res/style.main.css">
+<link rel="stylesheet" href="lib/animate/animate.min.css" />
+
+<!-- Main Stylesheet File -->
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/custom.css" />
+<style>
+#slider {box-shadow: none;}
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+<div id="header" role="header" class="header table">
+	<div class="inner-wrapper m-12 table">
+		<div class="table-cell m-8 t-2 logo-container">
+			<img src="images/logo.png" class="logo" alt="logo" />
+		</div>
+		
+		<div class="table-cell m-4 t-10 menu-btn-container">
+			<div class="menu-btn" onclick="toggleMenu()">
+				<div class="menu-bars menu-bar-1"></div>
+				<div class="menu-bars menu-bar-2"></div>
+				<div class="menu-bars menu-bar-3"></div>
+			</div>
+		</div>
+		
+		<div id="menu-drawer" class="menu-drawer m-12 t-10" role="navigation-bar">
+			<ul class="menu" role="menu">
+				<li><a href="#about" class="scrollto" onclick="toggleMenu()">ABOUT</a></li>
+				<li><a href="#contact" class="scrollto" onclick="toggleMenu()">CONTACT</a></li>
+				<li><a href="">SIGN UP</a></li>
+				<li><a href="">SIGN IN</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of header -->
+
+<div id="slider-section" class="container-fluid">
+	<div class="row" style="padding: 0; background-color: black;">
+		<div class="inner-wrapper">
+			<!--start of sliders-->
+			<div class="slider" id="slider">
+				
+				<!-- Every slider-item element is considered a slide -->
+
+				<div class="slider-item">
+					<!-- You can embed whatever you want insider this and provide custom styling -->
+					<img src="images/slider-image-1.jpg">
+				</div>
+
+				<div class="slider-item">
+					<img src="images/slider-image-2.jpg">
+				</div>
+
+				<div class="slider-item">
+					<img src="images/slider-image-3.jpg">
+				</div>
+				
+
+				<!-- adding buttons for next and prev -->
+				<button class="prev">
+					<!-- icon for button -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+				</button>
+				<button class="next">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+				</button>
+
+				<!-- Slider Background to provide initial height of cool background -->
+				<img class="background" style="height: 100%; width: 100%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAABfCAYAAADWH0qpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABBdEVYdERlc2NyaXB0aW9uADRrIHdhbGxwYXBlciBMb3ZlbHkgNGsgbWluaW1hbGlzdCB3YWxscGFwZXIgNjcgaW1hZ2VznMvVCQAAABl0RVh0Q29weXJpZ2h0ADRyZWNlbnRjYXJzLmNvbdzHkxgAAABBdEVYdENvbW1lbnQAQ1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gOTAKfVTa3QAAATFJREFUeF7t08EJwDAAAzGn++/c5tElDiQwnuDOtvcOCHr+B4IEDGEChjABQ5iAIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwBAmYAgTMIQJGMIEDGEChjABQ5iAIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAIEzCECRjCBAxhAoYwAUOYgCFMwJC1fQ6sAb3QNcqwAAAAAElFTkSuQmCC">
+				
+				<!-- Span element consist of Swicthes -->
+				<span class="switch">
+					<!-- dots representing current slider -->
+				</span>
+			</div><!--end of sliders-->
+		</div>
+	</div>
+</div><!-- end of the container fluid-->
+
+<div id="about" class="container-fluid wow fadeInUp">
+	<div class="row about-section">
+		<div class="inner-wrapper">
+			<h1 class="text-center">ABOUT US</h1>
+			<div class="table m-12">
+				<div class="table-cell about-picture-bg">
+					<!-- <div class="tiles" ></div> -->
+				</div>
+				<div class="table-cell right-cell">
+					<div class="tiles">
+						<p class="text-center">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+						<div class="text-center"><a href="" class="contact-btn">READ MORE</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end of about section -->
+</div>
+
+<div id="contact" class="container-fluid contact-section wow fadeInUp" data-wow-delay="">
+	<div class="row">
+		<div class="inner-wrapper">
+			<h1 class="text-center">CONTACT US</h1>
+			<div class="container-fluid">
+			<div class="row">
+				<div class="column m-12 t-4">
+					<h3>FOLLOW US</h3>
+					<p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+				</div>
+				<div class="column m-12 t-8 form-container">
+					<div class="container-fluid">
+					<div class="row">
+						<form name="contact-form" method="POST" action="" onsubmit="return validateForm();" style="position: relative;">
+							<div id="form-left-column" class="column m-12 d-6">
+								<input type="text" name="fname" placeholder="Fullname" class="form-element form-input" onblur="validateForm()" required="required" />
+								<input type="email" name="email" placeholder="Email" class="form-element form-input" onblur="validateForm()" required="required"/>
+								<input type="text" name="subject" placeholder="Subject" class="form-element form-input" onblur="validateForm()" />
+							</div>
+							<div class="column m-12 d-6">
+								<textarea id="textarea" name="message" placeholder="Message" class="form-element form-message" onblur="validateForm()" required="required"></textarea>
+								<div class="text-right">
+									<input type="submit" name="submit" value="SEND" class="form-btn" />
+								</div>
+							</div>
+							<span id="error-message" class="error-message"></span>
+						</form>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div><!-- end of contact section -->
+</div>
+
+<div class="container-fluid wow fadeInUp">
+<div class="row text-center address-section">
+	<div class="inner-wrapper">
+		<div class="column m-12 t-4">
+			<span class="icon icon-room"></span> <a>17B Ngwa Rd Aba</a></div>
+		<div class="column m-12 t-4">
+			<span class="icon icon-mail_outline"></span> <a href="mailto:support@paradigmHQ.org">support@paradigmHQ.org</a>
+		</div>
+		<div class="column m-12 t-4">
+			<span class="icon icon-phone2"></span> <a href="tel:+2348000000000">+2348000000000</a> 
+		</div>
+	</div>
+</div><!-- end of address section -->
+</div>
+
+<div class="container-fluid wow fadeInUp" style="padding-bottom: 0;">
+	<div class="row footer text-center">
+		<div class="inner-wrapper">
+			&copy; 2020. All rights reserved.
+		</div>
+	</div>
+</div>
+
+</div><!-- end of page wrapper -->
+
+<a href="#" class="back-to-top"><span class="icon icon-chevron-up"></span></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- offline boostrap & jquery to be removed-->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="sliders/res/script.main.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+
+
+<!-- main javascript file-->
+<script src="js/main.js"></script>
+</body>
+</html>

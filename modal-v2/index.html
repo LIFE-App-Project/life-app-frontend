@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Modal Login Form</h2>
+    <button id="_displayBtn" class="btns" style="width:auto;">Login</button>
+    <button id="_displayBtn2" class="btns" style="width:auto;">sign in</button>
+
+
+    <div class="bg-modal">
+        <div class="modal-content animate" id="slide1">
+            <div class="image_container">
+                <img src="Paradigm-Initiative-Logo.png" class="logo "alt="logo">
+            </div>
+            <span class="_close" id="_close1" title="Close Modal">&times;</span>
+            <div class="form-container">
+                <form id="form_login" action="test.html">
+                    <div class="_formgrid">
+                        <label>
+                            <span class="popuptext" id="myPopup1">Letters should only be alphabetical</span>
+                            <input type="text" id='firstname_login' placeholder="FIRST NAME" name="fname">
+                        </label>
+                        <label>
+                            <input type="text" id='lastname_login'  placeholder="LAST NAME" name="lname">
+                        </label>
+                    </div>
+
+                    <label>
+                        <input type="email"  id='email_login' placeholder="EMAIL ADDRESS" name="email">
+                    </label>
+
+                    <label>
+                    <span class="show_hide"><img src="hidden.png" alt="" class="_expand_"></span>
+                    <input type="password"  id='password_login' placeholder="PASSWORD" name="psw">
+                    </label>
+
+                    <label>
+                        <input type="password" id='confirmPassword_login'  placeholder="CONFIRM PASSWORD" name="cnfpsw">
+                        <span class="popuptext" id="myPopup">Passwords don't match</span>
+                    </label>
+
+                    <div class="radio_spot">
+                    <label class="radio_container">Male
+                        <input type="radio" name="gender" value="male" id="male">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="radio_container">Female
+                        <input type="radio" name="gender" value="female" id="female">
+                        <span class="checkmark"></span>
+                        <span class="popuptext" id="myPopup3">choose a gender</span>
+                    </label>
+                    </div>
+
+                    <label class="check_container">I accept the <a href="#" target="_blank">Terms of Use</a> & <a href="#" target="_blank">Privacy Policy</a>
+                    <input type="checkbox" id='agreed' checked>
+                    <span class="check_checkmark"></span>
+                    <span class="popuptext" id="myPopup2">You have to agree to the terms</span>
+                    </label>
+
+                    <div class='_bottomgrid'>
+                    <div><span class="recaptcha">/recaptcha goes here/</span></div>
+                    <div class="btn_container"><button class="sub_button" type="submit">Sign up</button></div></div>
+                    
+                    <center style="margin: 10px;">Already have an account? <a href="javascript:void(0)" id="loginHere">Login here</a></center>
+
+                 </form>
+           </div>  
+        </div>
+
+        <!-- sign in -->
+        <div class="modal-content animate" id="slide2">
+            <div class="image_container">
+                <img src="Paradigm-Initiative-Logo.png" class="logo" alt="logo">
+            </div>
+            <span class="_close" id="_close2" title="Close Modal">&times;</span>
+            <div class="form-container">
+                <form id="form_signin">
+                    <input type="text"  id='username_signin' placeholder="USERNAME OR EMAIL ADDRESS" name="unameEmail">
+                   
+                    <input type="password"  id='password_signin' placeholder="PASSWORD" name="psw">
+
+                    <label class="check_container">Remember me
+                    <input type="checkbox">
+                    <span class="check_checkmark"></span>
+                    </label>
+
+                    <div class='_bottom'>
+                        <div class="btn_container"><button class="sub_button2" type="submit">Sign in</button></div>
+                    </div>
+                    
+                    <div class='_bottomgrid'>
+                        <div><span class="recaptcha"><a href="javascript:void(0)" id="register">Register</a></span></div>
+                        <div class="btn_container"><a href="">Forgot your password?</a></div></div>
+                </form>
+            </div>  
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+
+</body>
+</html>

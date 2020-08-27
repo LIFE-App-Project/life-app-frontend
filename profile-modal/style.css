@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-size:15px;
+}
+
+h1 {font-size:40px;}
+h2 {font-size:36px;}
+h3 {font-size:30px;}
+h4 {font-size:24px;}
+h5 {font-size:20px;}
+h6 {font-size:18px;}
+
+.btns{
+    background-color: #ff6A00;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 60%;
+    cursor: pointer;
+}
+
+small {
+    color: gray;
+    font-size: 85% ;
+}
+
+
+
+/* The Close Button (x) */
+
+._close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+._close:hover,
+._close:focus {
+  color: red;
+  transition: 1s;
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.bg-modal, .bg-modal2{
+    width: 100%;
+    height: 150%;
+    background: rgba(0, 0, 0, 0.021);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+@media(min-height:800px) {
+	.bg-modal, .bg-modal2{
+    height: 100%;
+  }
+}
+
+.blur{
+    backdrop-filter: blur(5px);
+}
+
+.modal-content{
+    width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 30px;
+    box-shadow:  0px 0px 10px 3px rgba(0, 0, 0, 0.39);
+    position: relative;
+    z-index: 1;
+}
+
+.modal-content:after{
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+  /*opacity: 20%;*/
+  width: 100%;
+  background-image: url(eeee1.svg);
+  height: 100%;
+  background-repeat: no-repeat;
+  /*border: solid 2px;*/
+  z-index: -2;
+}
+
+.modal_svg:before{
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 20px;
+  /*opacity: 20%;*/
+  width: 38%;
+  background-image: url(eeee2.svg);
+  height: 18%;
+  background-repeat: no-repeat;
+  z-index: -2;
+  /*border: solid 2px;*/
+}
+
+.bg-modal2 .modal-content{
+  width: 450px;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding:40px;
+  box-shadow:  0px 0px 10px 3px rgba(0, 0, 0, 0.39);
+  position: relative;
+}
+
+.form_container{
+    padding: 10px 10px;
+}
+
+._formgrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,49%);
+    grid-column-gap: 2%;
+    /* border: solid 2px black; */
+}
+
+/*INPUT spacing */
+.frm_cont{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* NATIONALITY DISPLAY */
+.frm_cont_grd{
+  display: inline-flex;
+  float: left;
+}
+
+.frm_cont span, .__info_ span{
+  color: grey;
+  margin-right: 2px;
+}
+
+
+.form_form_info{
+    text-align: left;
+}
+
+
+._Slabel_{
+    text-align: left; 
+}
+
+.form_form_info span, .__info_ span{
+  font-size: 100%;
+}
+
+.state_input{
+  text-align: left;
+  width: 65%;
+}
+
+ .state_input input{
+    position: relative;
+    border: 2px solid orangered;
+    font-weight: bold;
+    height: 35px;
+    width: 100%;
+    margin-top: -2px
+  }
+
+/* DATE OF BIRTH GRID */
+.DOB_grid{
+ display: table;
+ width: 95%;
+}
+
+.DOB_grid .custom-select{
+  display: table-cell;
+  width: 150px;
+}
+
+/*EDUCATION LEVEL*/
+    .__Edu_cont__{
+        /*text-align: right;*/
+        align-content: center ; 
+        width: 100%;
+    }
+
+/* text spacing */
+.txt_gap{
+    margin-bottom: 5px;
+}
+
+
+/*contact grid*/
+._contact_grid{
+    display: grid; 
+    grid-template-columns: repeat(2,50%);
+}
+
+._contact_Title{
+  display: grid; 
+  grid-template-columns: repeat(1,100%); 
+  width: 55%; 
+  /*border: solid 3px;*/
+}
+
+._contact_Title div{
+  margin-top: 20px;
+}
+
+._contact_Num{
+  display: block; 
+  margin-left:-95px
+}
+
+input{
+    width: 100%;
+    padding: 12px 10px;
+    margin: 10px auto;
+    display: inline-block;
+    border: 2px solid #ff6A00;
+    background: none;
+    box-sizing: border-box;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.bg-modal2 .modal-content input{
+  width: 80%;
+  padding: 12px 10px;
+  margin: 10px auto;
+  display: inline-block;
+  border: 2px solid #ff6A00;
+  background: none;
+  box-sizing: border-box;
+  transition: .5s;
+  font-weight: bold;
+}
+
+.bg-modal2 .modal-content input:focus{
+  border: 2px solid #ffD900;
+  outline: none;
+}
+
+input:focus{
+    border: 2px solid #ffD900;
+    outline: none;
+  }
+
+ 
+
+  .__info_ textarea{
+    width: 100%;
+    height: 100px;
+    padding: 12px 10px;
+    font-size: 90%;
+    border-radius: 10px;
+    margin: 10px auto;
+    border: 2px solid #ff6A00;
+    background: none;
+    box-sizing: border-box;
+    transition: .5s;
+    /*text-align: justify;*/
+}
+
+textarea:focus{
+    border: 2px solid #ffD900;
+    outline: none;
+  }
+
+  ._info_btn_{
+    padding: 10px 20px;
+    border: solid rgb(5, 197, 5) 2px;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(5, 197, 5);
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  ._info_btn_:hover{
+    transition: .3s;
+    border: solid #037203 2px;
+    color:#037203; 
+  }
+
+  .sb_btn_cont_{
+    margin-top: 10px;
+  }
+
+ .__Resetpsd__ {
+    font-size: 90%;
+    text-align: right;
+ }
+
+  .__Resetpsd__ a {
+    color: #005CB9;
+    text-align: right;
+  }
+
+   .__Resetpsd__ a:hover{
+      color: #003264;
+   }
+
+  /* Customize the label (the container) */
+  .profile_radio{
+    text-align: center; 
+    margin-bottom: 10px;
+  }
+
+.radio_spot{
+    margin-top: 5px;
+    justify-items: left;
+}
+
+.radio_container {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+  .radio_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 1px solid #ff6A00
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio_container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a green background */
+  .radio_container input:checked ~ .checkmark {
+    background-color: #ff6A00;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio_container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radio_container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  /*the container for custom select must be positioned relative:*/
+
+  .frm_cont_grd .custom-select{
+    width:150px; 
+  }
+
+.custom-select {
+    position: relative;
+    border: 2px solid orangered;
+    font-weight: bold;
+    height: 30px;
+  }
+
+  ._backg_{
+      background-color: rgb(5, 197, 5);
+      border-style: none;
+      width:200px;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/      
+  
+  }
+
+  
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: orangered transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent orangered transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: black;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  ._backg_ .select-selected{
+    color: white;
+  } 
+  
+  ._backg_ .select-selected:after{
+    border-color: white transparent transparent transparent;
+  }
+
+  ._backg_ .select-selected.select-arrow-active:after {
+    border-color: transparent transparent white transparent;
+    top: 7px;
+  }
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: -100px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    max-height: 270px;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.096);
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+   }
+   
+   @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+   }
+   
+   @keyframes animatezoom {
+       from {transform: scale(0)}
+       to {transform: scale(1)}
+   }
+
+   .submit_container button{
+    background-color: limegreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: auto;
+    text-align: left;
+    cursor: pointer;
+}
+
+.submit_container button:hover{
+  transition: 0.5s;
+  background-color: rgb(6, 129, 6);
+}
+
+.bg-modal .modal-content label,
+.bg-modal2 .modal-content label{
+  position: relative;
+}
+
+.bg-modal .modal-content input.error,
+.bg-modal2 .modal-content input.error{
+  border: 2px solid red ;
+  animation: bounce-animate .4s ease-in-out 3;
+}
+
+@keyframes bounce-animate{
+ 0%{
+   transform: translateY(0px);
+ }
+ 20%{
+   transform: translateY(-20px);
+ }
+ 40%,100%{
+   transform: translateY(0px);
+ }
+}
+
+.bg-modal .modal-content input.success,
+.bg-modal2 .modal-content input.success{
+ border: 2px solid limegreen;
+}
+
+.popuptext{
+  visibility: hidden;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.521);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 2px;
+  position: absolute;
+  z-index: 1;
+  left: 60%;
+  margin-top: -20px;
+}
+
+.popuptext::after{
+  content: "";
+  position: absolute;
+  left: 70%;
+  top: 45%;
+  border-width: 5px;
+}
+
+
+.showpopup {
+ visibility: visible;
+ -webkit-animation: fadeIn 1s;
+ animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+
+.show_hide{
+  position: absolute;
+  left: -40px;
+  top: 60px;
+  cursor: pointer;
+  z-index: 7;
+}
+
+@media(max-width:400px){
+
+  .frm_cont_grd{
+    display: Block;
+  }
+
+  .blur{
+    backdrop-filter: blur(5px);
+  }
+
+  .frm_cont_grd .custom-select{
+    width:120px; 
+  }
+
+  .state_input{
+    width: 140%;
+  }
+
+  .bg-modal, .bg-modal2{
+    height: 180%;
+  }
+
+  ._formgrid{
+    grid-template-columns: repeat(2,30%);
+    grid-column-gap: 6em;
+  }
+
+    ._backg_{
+      width: 150px;
+      font-size: 40%;
+  }
+
+}
+
+@media(max-width:450px){
+  .frm_cont_grd .custom-select{
+    width:110px; 
+  }
+
+  .blur{
+    backdrop-filter: blur(5px);
+}
+
+}
+
+@media(max-width:768px) {
+	.bg-modal2 .modal-content, .bg-modal .modal-content{
+    width:95%;
+  }
+
+  .blur{
+    backdrop-filter: blur(5px);
+}
+
+  ._close {
+    top: 10px;
+    font-size: 35px;
+  }
+
+  .show_hide{
+    left: -40px;
+    top: 60px;
+  }
+
+     .DOB_grid .custom-select{
+      width: 45px;
+    }
+
+    /*EDUCATION LEVEL*/
+    .__Edu_cont__{
+        width: 100%;
+    }
+
+    /* ._backg_{
+        width: 100%;
+    } */
+
+    .__Edu_cont__ .txt_gap span{
+      font-size: 13px;
+    }
+
+    /*CONTACT CONT*/
+    ._contact_Num{
+      display: block; 
+      margin-left:-65px
+    }
+
+  .popuptext{
+    left: 10%;
+     background-color: rgba(0, 0, 0, 0.349);
+     margin-top: -20px;
+  }
+
+ 
+}
