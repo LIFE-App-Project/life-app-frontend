@@ -1,0 +1,131 @@
+* {
+   margin: 0%;
+   padding: 0%;
+}
+
+.body_div {
+   display: flex;
+   justify-content: space-around;
+}
+
+.sub_div {
+   display: flex;
+   flex-direction: column;
+   margin-top: 100px;
+   align-items: center;
+}
+
+.analytics_div {
+   display: grid;
+   align-items: center;
+   background: white;
+   width: 330px;
+   height: 130px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   margin-top: 20px;
+   justify-content: center;
+}
+
+.course_div {
+   display: grid;
+   align-items: center;
+   background: white;
+   width: 300px;
+   height: 130px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   margin-top: 20px;
+   justify-content: center;
+}
+
+.analytics_p {
+   font-size: 20px;
+   margin-right: 20px;
+   color: gray;
+}
+
+.analytics_p2 {
+   font-size: 30px;
+}
+
+.body_table {
+   display: grid;
+   align-items: center;
+   background: white;
+   margin-top: 140px;
+   height: 280px;
+   width: 400px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   color: gray;
+   font-size: 20px;
+}
+
+.hover_main {
+   display: flex;
+   position: fixed;
+   align-items: center;
+   margin-left: 20px;
+   margin-top: -20px;
+}
+
+.hover_sub {
+   display: flex;
+   align-items: center;
+   margin-right: 50px;
+   width: 420px;
+   height: 65px;
+   background: rgb(216, 247, 242);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   justify-content: space-around;
+}
+
+.hover_img {
+   height: 40px;
+   /* margin-right: 15px; */
+}
+
+.border {
+   height: 12vh;
+   width: 15px;
+   background-color: green;
+}
+
+.table_sub {
+   display: flex;
+   justify-content: space-around;
+}
+
+.progress_container1 {
+   background: lightgray;
+   width: 310px;
+   height: 10px;
+   border-radius: 20px;
+}
+
+.progress_container2 {
+   background: lightgray;
+   width: 280px;
+   height: 10px;
+   border-radius: 20px;
+}
+
+.progressIndicator_red {
+   background-color: #ff6a00;
+}
+
+.progressIndicator_yellow {
+   background-image: linear-gradient(to right, #ff6a00, #ffd900);
+}
+
+.progressIndicator_green {
+   background-image: linear-gradient(to right, #ff6a00, #ffd900, green);
+}
+
+@media (max-width: 1080px) {
+   .body_div {
+      display: grid;
+   }
+
+   .body_div {
+      margin-bottom: 50px;
+   }
+}
