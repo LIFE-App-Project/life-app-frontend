@@ -1,0 +1,807 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5eff00), to(#049123));
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.233);
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.082);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.103);
+}
+
+html{
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.table_table{
+    display: table;
+    width: 100%;
+}
+
+._row__{
+    margin: 0 10px;
+    position: relative;
+}
+
+._col__{
+    display: table-cell;
+    text-align: left;
+    position: absolute;
+}
+
+._col__:nth-child(1){
+    width: 65%;
+    left: 0;
+}
+
+ ._col__:nth-child(2){
+    width: 35%;
+    box-shadow:  0px 5px 10px 3px rgba(0, 0, 0, 0.171);
+    right: 0;  
+}
+
+/*THIS IS VIDEO LIST*/
+.video_list{
+    /*display: none;*/
+}
+
+.video_list_content{
+    padding: 20px 0px;
+    max-height:37em;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.video_list_content ul li{
+   border-bottom: solid .5px black; 
+    list-style: none;
+    width: 100%;
+}
+
+.video_list_content ul li main{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 94.5%;
+    padding: 15px 0;
+    padding-left: 10px;
+    transition: 0.5s all;
+}
+
+.video_list_content ul li main:hover{
+    background-color: #4AFF92;
+    transition: 0.5s all;
+    border-left: solid 12px green;
+    transform: scale(1.01);
+    box-shadow: 0 5px 10px 0.5px #DBDBDB;
+}
+
+.video_list_content ul li span{
+    display: inline-block;
+}
+
+.video_list_content ul li span:nth-child(1){
+    width: 60%;
+}
+
+.video_list_content ul li span:nth-child(2){
+    width: 36%;
+    margin-left: 5px;
+    position: absolute;
+    top: 10;
+}
+
+.video_list_content ul li video{
+    width: 100%;
+    max-height: 25vh;
+    background-color: black;
+}
+
+/*THIS IS VIDEO CONTAINER*/
+._video_container__{
+    display: table;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.cell__{
+    display: table-cell;
+    position: relative;
+    top: 100;
+    vertical-align: top
+}
+
+.cell__:nth-child(1){
+    width: 12%;
+}
+
+.cell__:nth-child(2){
+    width: 60%;
+}
+
+.__video__ video{
+   height: 50vh; 
+   width: 97%;
+   background-color: black;
+   border: solid 2px;
+}
+
+.video_pic_container{
+    text-align: center;
+}
+
+.round{
+    border-radius: 100%;
+    width:100px;
+    height:100px;
+}
+
+/*THIS COURSE DETAILS*/
+.__phone-nav__{
+    display: none;
+    /*background-color: red;*/
+}
+.course_info_body{
+    position: relative;
+    width: 100%;
+}
+
+.course_nav{
+    margin-top: 20px;
+    background-color: #F5F5F3;
+    position: fixed;
+    width: 64.4%;
+    left: 0;
+    box-shadow: 0 5px 10px 0.5px #DBDBDB;
+        
+}
+
+.course_nav div{
+    margin: 12px 30px; 
+    text-align: center;
+}
+
+.course_nav  span.active {
+    /*background-color: red;*/
+}
+
+.course_nav div a{
+    text-decoration: none;
+    color: black;
+}
+
+.course_nav div a:hover{
+     color: white;
+}
+
+.course_nav div span{
+    /*background-color: white;*/
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 19px;
+    font-size: 1vw;
+    padding: 3px 5px;
+    transition: .4s all;
+}
+
+
+
+/*.course_nav div span:hover{
+    border-radius: 3px;
+    background-color: #FF6600;
+    transition: .4s all;
+}*/
+
+.course_info_content div{
+    margin-top: 97px;
+    padding-right: 40px;
+    position: absolute;
+    text-align: justify;
+    overflow-y: scroll;
+    max-height: 12.5em;
+    text-align: left;
+}
+
+.course_nav div span.active a{
+    color: white;
+}
+
+.slide{
+    width: 125px; 
+    height: 21px;
+    position: absolute; 
+    left: 0;
+    opacity: 0;
+    /*margin-left: 2000px;*/ 
+    background-color: #FF6600;
+    z-index: -2
+}
+
+.course_nav div span:nth-child(1).active ~ .slide{
+    left: 90px;
+    opacity: 1;
+}
+
+.course_nav div span:nth-child(2).active ~ .slide{
+    left: 245px;
+    opacity: 1;
+}
+
+.course_nav div span:nth-child(3).active ~ .slide{
+    left: 385px;                                                                 
+    opacity: 1;
+}
+
+.course_nav div span:nth-child(4).active ~ .slide{
+    left: 544px;
+    opacity: 1;
+    width: 125px;
+}
+
+.course_nav div span:nth-child(5).active ~ .slide{
+     left: 665px;
+     opacity: 1;
+     /*width: 65px;*/
+}
+
+
+
+/*//////////THIS IS FOR OPEN VIDEOS DISPLAY//////////*/
+.video_btn_container{
+     position: absolute;
+     bottom: 0;
+     left:0 ;
+     right: 12px;
+     width: 100%;
+     font-size: 3.2vw;
+     display: none; 
+}
+
+.video_btn_container h3{
+    color: #049123;
+}
+
+.videoNav_btn{
+    display: none;
+    background-image: linear-gradient(rgba(94,255,0,1),rgba(4,145,35,1));
+    cursor: pointer;
+    color: white;
+    animation: video_animate 2s ease-in-out infinite;
+    transition: linear 0.5s;  
+    border-radius: 30%;
+    padding: 6px;
+}
+
+
+
+@keyframes video_animate{
+    0%{
+        transform: translateY(0px) scale(0.8);
+
+    }
+
+    20%{
+        transform: translateY(-15px) rotate(10deg);
+    }
+
+    40%,60%{
+        transform: translateY(-7px) rotate(-10deg);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.videoNav_btn:hover{
+   animation: none; 
+}
+
+/*///////////THIS IS FOR CLOSE VIDEOS DISPLAY//////////*/
+   
+.close_Video_btn{
+    background-color: white;
+    position: fixed;
+     z-index: 20;
+     top: 0;
+     width: 82.4%;
+     opacity: 0%;
+     transition: .10s;
+      /* transition: visibility 0s, opacity 0.5s linear;
+     visibility: hidden;*/
+}
+
+.closebtn{
+     display: none;
+     text-decoration: none;
+     color: white;
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+     background-image: linear-gradient(rgba(94,255,0,1),rgba(4,145,35,1));
+     padding: 1px 0px;
+ }
+
+ .closebtn:hover{
+    opacity: 50%;
+ }
+
+ .closebtn div{
+    padding-right: 10px;
+    margin-left: 10px; 
+    display: inline-block;
+    /*border: solid 2px;*/
+ }
+
+  .closebtn div:nth-child(2){
+    /*animation: animated 2s ease-in-out infinite;*/
+    transition: linear 0.5s;
+    font-size: 25px;
+    font-weight: bold;
+ }
+
+ @keyframes animated{
+    0%{
+        transform: translateX(0px) scale(0.8);
+    }
+
+    20%{
+        transform: translateX(-8px);
+    }
+
+    40%,60%{
+        transform: translateX(-8px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.close_Menu_Btn{
+    display: none;
+}
+
+/*///////////////THIS IS FOR MAX HEIGHT///////////////*/
+
+@media(max-height:1366px){
+    /*THIS IS VIDEO LIST*/
+    .video_list_content{
+        max-height:83.5em;
+    }
+
+    .course_info_content div{
+        max-height: 50.5em;
+    }
+
+}
+
+@media(max-height:1280px){
+    /*THIS IS VIDEO LIST*/
+    .video_list_content{
+        max-height:77.5em;
+    }
+
+    .course_info_content div{
+        max-height: 46.5em;
+    }
+}
+
+@media(max-height:1024px){
+    /*THIS IS VIDEO LIST*/
+    .video_list_content{
+        max-height:61.5em;
+    }
+
+     .course_info_content div{
+        max-height: 35.5em;
+    }
+}
+
+@media(max-height:950px){
+    /*THIS IS VIDEO LIST*/
+    .video_list_content{
+        max-height:57.5em;
+    }
+
+    .course_info_content div{
+        max-height: 21.5em;
+    }
+}
+
+@media(max-height:900px){
+    /*THIS IS VIDEO LIST*/
+    .video_list_content{
+        max-height:54.5em;
+    }
+
+    .course_info_content div{
+        max-height: 20.5em;
+    }
+}
+
+@media(max-height:800px){
+    /*THIS IS VIDEO LIST*/
+    .video_list_content{
+        max-height:47.5em;
+    }
+
+    .course_info_content div{
+        max-height: 16.5em;
+    }
+}
+
+@media(max-height:769px){
+    /*THIS IS VIDEO LIST*/
+    .video_list_content{
+        max-height:37.5em;
+    }
+
+    .course_info_content div{
+        max-height: 12.5em;
+    }
+
+    .course_nav{
+        left: 0;
+        top: 55.5%;
+    }
+}
+
+
+@media(max-height:600px){
+    /*THIS IS VIDEO LIST*/
+    .video_list_content{
+        max-height:35.5em;
+    }
+
+    .course_info_content div{
+        max-height: 24.5em;
+    }
+}
+
+/*////////////////THIS IS FOR MAX WIDTH/////////////*/
+@media(max-width: 1030px){
+    /*THIS IS VIDEO LIST*/
+
+    .videoNav_btn{
+        display: none;
+    }   
+
+    .course_nav .closebtn{
+        display: none
+    }
+
+    .video_list_content ul li{
+        width: 100%;
+    }
+
+
+    .video_list_content ul li main{
+        width: 93%;
+    }    
+
+    .video_list_content ul li main:hover{
+        transform: scale(1.01);
+    }
+
+    .video_list_content ul li video{
+        width: 100%;
+        max-height: 10vh;
+        background-color: black;
+    }
+
+    /*THIS IS VIDEO CONTAINER*/
+    .__video__ video{
+        height: 30vh; 
+    }
+
+
+   /*THIS IS COUSRSE DETAILS*/ 
+
+   .course_nav div{
+        margin: 12px 0px; 
+        text-align: center;
+    }
+
+    .course_nav div span{
+        margin: 3px 7px;
+        padding: 3px 5px;
+        font-size: 1.4vw;
+    }
+   
+}
+
+@media(width: 768px){
+    .video_list_content ul li main{
+        width: 90%;
+    } 
+
+     .course_info_content div{
+        margin-top: 85px;
+    }
+}
+
+
+@media(max-width: 650px){
+
+     ._col__:nth-child(1){
+        width: 100%;
+        left: 0;
+    }   
+
+ ._col__:nth-child(2){
+        box-shadow:  0px 5px 10px 3px rgba(0, 0, 0, 0.171);
+        width: 0%;
+        z-index: 200;
+        background-color: white;
+        top: 0;
+        right: 0;
+        position: fixed;
+        transition: .5s;
+    }
+
+    .video_btn_container{
+        display: inline-block;
+    }
+
+    .videoNav_btn{
+        display: inline-block;
+    }   
+
+    .closebtn{
+        display: inline-block;
+    }
+
+    /*THIS IS VIDEO LIST*/
+    .video_list_content ul li main{
+        width: 100%;
+        font-size: 3.5vw;
+    }
+
+    .video_list_content ul li main:hover{
+        transform: scale(1.01);
+    }
+
+    .video_list_content ul li video{
+        width: 100%;
+        max-height: 20vh;
+        background-color: black;
+    }
+
+    /*THIS IS VIDEO CONTAINER*/
+     .__video__ video{
+        height: 40vh; 
+    }
+
+   /*THIS IS COUSRSE DETAILS*/ 
+
+    .__phone-nav__{
+        display: block;
+        position:absolute;
+        left: 0px;
+        padding: 5px 0px; 
+        z-index: 200;
+        box-shadow: 0 5px 10px 0.5px #DBDBDB;
+        color: #049123;
+        /*text-align: left;*/
+        margin-top: 45px;
+        font-size: 4.7vw;
+        width: 100%;
+        z-index: 100;
+        font-weight: bold;
+    }
+
+    .__phone-nav__ div{
+        display: inline-block;
+        width: 20%;
+        padding-left: 20px;
+        height: 30px;
+    }
+
+    .menu_bar{
+        /*border: solid 2px;*/
+        transition: visibility .3s opacity .3s ease-in-out;
+    }
+
+    .menu_bar div{
+        height: 6.5px;
+        width: 18px;
+        margin: 3.5px 0;
+        border-radius: 60px;
+        background-image: linear-gradient(rgba(94,255,0,1),rgba(4,145,35,1));
+        display: block;
+        /*border: solid 2px;*/
+    }
+
+    .menu_bar:hover div{
+        /*opacity: 50%; */
+        transition: .5s linear;
+        width: 40px;   
+    }
+
+    .menu_bar:hover div:nth-child(1){
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility .3s linear;
+    }
+
+    .menu_bar:hover div:nth-child(2){
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility .3s linear;
+    }
+
+
+    .close_Menu_Btn{
+        position: absolute;
+        color: /*#FF6600*/ #5eff00; 
+        font-size: 39px;  
+        display: block;
+        left: 5%;
+        top: -7%;
+        transition: 0.5s linear;
+    }
+
+    .close_Menu_Btn:hover{
+        color: red;
+        transition: 0.5s linear;
+        transform: rotate(360deg);
+    }
+
+   .course_nav{
+        width: 96.5%;
+        margin-left: 10px;
+        visibility: hidden; 
+        opacity: 0;
+        top: 48.5%;
+        left: 0;
+        position: fixed;
+        background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+        transition: visibility 0s, opacity 0.5s linear ;
+        z-index: 200;
+    }
+
+
+    .course_nav div{
+        margin: 12px 0px; 
+        text-align: center;
+    }
+
+    .course_nav div a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .course_nav div span{
+        margin: 3px 10px;
+        margin-bottom: 20px;
+        /*padding: 3px 5px;*/
+        font-size: 3.5vw;
+        text-align: center;
+        width: 70%;
+        transition: .4s linear;
+        background: none;
+        color: white;
+    }
+
+    .course_nav div span:hover{
+        border-radius: 3px;
+        background-color:#049123;
+        color: white;
+        transition: .4s linear;
+    }
+
+    .course_info_content div{
+       margin-top: 102px;
+        max-height: 12.5em;
+    }
+
+}
+
+
+@media(max-width: 450px){
+
+    ._col__:nth-child(1){
+        width: 100%;
+        left: 0;
+    }   
+
+ ._col__:nth-child(2){
+        width: 0%;
+        right: 0;
+        z-index: 200;
+        background-color: white;
+        top: 0;
+        right: 0;
+        position: fixed;
+        transition: .5s;
+    }
+    /*THIS IS VIDEO LIST*/
+
+    .video_list_content{
+        padding: 20px 0px;
+        max-height:37em;
+        overflow: auto;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+
+    .video_list_content ul li main{
+        font-size: 3vw;
+        width: 93.5%;
+    }
+
+    .video_list_content ul li video{
+        width: 100%;
+        max-height: 20vh;
+        background-color: black;
+    }
+
+    /*THIS IS VIDEO CONTAINER*/
+    .__video__ video{
+        height: 44vh; 
+    }
+
+    .round{
+        border-radius: 100%;
+        width:50px;
+        height:50px;
+    }
+   /*THIS IS COUSRSE DETAILS*/
+
+   .videoNav_btn img{
+        width: 22px;
+        height: 22px;
+    }
+
+    .close_Menu_Btn{
+        top: -5.5%;
+    }
+
+   .course_nav{
+        width: 93.9%;
+        left: 0;
+        top: 57.9%;
+    }
+
+    .course_nav div{
+        margin: 0px 0px; 
+        text-align: center;
+    }
+
+    .course_nav div span{
+        margin: 3px 10px;
+        padding: 3px 5px;
+    }
+
+    .course_info_content div{
+        margin-top: 100px;
+    } 
+
+    @media(max-width: 415px){
+
+        .course_nav{
+        top: 55.9%;
+    }
+}
+
+ @media(max-width: 360px){
+
+        .course_nav{
+        top: 56.9%;
+    }
+}
